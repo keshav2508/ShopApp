@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical"
+
+        tools:context=".MainActivity">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Profile Image"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="35sp"
+            android:background="@drawable/border_main"
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            />
+
+
+        <!--Button for choosing image from gallery-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/f2_til_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/About_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="About Shop (Optional)"
+                android:autofillHints="About Shop"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnChoose_f4"
+            android:text="Select Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="ButtonStyle" />
+
+
+        <!--Image View for showing image choosen from gallery-->
+        <ImageView
+            android:id="@+id/imgView_f4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom">
+            <Button
+                android:id="@+id/sk_space_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Next"
+
+                tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/skip_btn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Skip"
+
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/background"
+    tools:context=".shopkeeper_space"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="30dp"
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_logo"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+    <TextView
+        android:id="@+id/change_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Image"
+        android:gravity="center_horizontal"
+        android:textColor="#002bff	"
+        />
+
+    <Switch
+        android:id="@+id/shop_on_off"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/status"
+        android:textOff="@string/closed"
+        android:textOn="@string/open"
+        android:layout_margin="20dp"
+        android:textSize="25sp"
+        tools:ignore="RtlHardcoded"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shop Status"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_text1"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#f44336"
+            android:textStyle="bold"
+            android:typeface="serif"
+
+            android:layout_marginStart="40dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status_text2"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:textColor="#4caf50"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginStart="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/profile_name"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_height="wrap_content"
+            android:text="User Mobile"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_mobile"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:typeface="serif"
+
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_height="wrap_content"
+            android:text="User Address"
+            android:textSize="20sp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profile_address"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:maxLines="1"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo" />
+
+
+</LinearLayout>
