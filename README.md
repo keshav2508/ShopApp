@@ -6,6 +6,7 @@
 - You don't have to wait in a queue.<br/>
 - You can also check Number of customers present at shop.<br/>
 - You can also chat with shopkeeper about any query.<br/>
+## ScreenShots
 <p>
 <details close>
 <summary> App Main Page </summary><br />
